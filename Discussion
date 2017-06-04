@@ -1,0 +1,69 @@
+Recursion
+
+1. In your own words, what is recursion?
+
+Recursion is when you have a funtion call itself.
+
+2. Why is it necessary to have a base case?
+
+It is necessary to have a base case so that the program knows when to stop recursing.
+
+#############################
+
+Graphs
+
+1. What is a graph?
+
+A graph is a data structure that is similar to a tree but it contains cycles. Graphs can be formated as directed or undirected and can contain data that is not connected to other parts of the graph.
+
+2. How is a graph different from a tree?
+
+Graphs can be undirected, cyclic, and be weighted, where as trees need to be acyclic and directed and can have only one root.
+
+3. Give an example of something that would be good to model with a graph.
+
+A markov chain would be modeled well with a graph, then you can see the different choices your program would make and get a good idea of the word list that would come out of the program.
+
+#############
+
+Performance of Different Data Structures
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure		Index	Search	Add-R	Add-L	Pop-L	Pop-R
+Python List (Array)	O(1)	O(n)	O(1)	O(n)	O(n)	O(1)
+Linked List	 	 	O(n) 	O(n) 	O(1) 	O(1) 	O(1)	O(n)
+Doubly-Linked List	O(n) 	O(n) 	O(1) 	O(1)	O(1)	O(1)	 
+Queue (as Array)	X		X	 	O(1)	X	 	O(n)	X
+Queue (as LL or DLL)X		X	 	O(1)	X	 	O(1)	X
+Stack (as Array, LL, or DLL)X	X	O(1) 	X		X	 	O(1)
+Deque (as DLL)		X		X	 	O(1)	O(1)	O(1)	O(1) 	 
+
+
+Fill in Runtime and Memory:
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure			Get		Add		Delete	Iterate	Memory
+Dictionary (Hash Map)	O(1)	O(1)	O(1)	O(n)	medium
+Set (Hash Map)	 	 	O(1)	O(1) 	O(1) 	O(n)	medium
+Binary Search Tree	 	O(log n)O(log n)O(log n)O(1)	little 
+Tree	 	 	 	 	O(n) 	O(1)	O(1)	O(1)	little
+
+#############
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+
+The bubble sort algorithm works by starting at the beginning of a list and taking the first 2 entries and comparing them to each other. Then moving the higher value of the 2 to the right. Then continuing down the list moving the higher value to the right until the end of the list. 
+Then the algorithm starts over again compairing the values until the list is sorted with the smallest value at the beginning of the list in order to the highest value being at the end of the list.
+
+2. Describe in words how the Merge Sort algorithm works.
+
+The merge sort algorithm works by taking two lists and comparing the first to elements of each list. It then takes the lowest element and addes it a new list. This then continues until all items in each list have been compared and added to the new list in order from smallest to largest.
+
+3. Describe in words how the Quick Sort algorithm works.
+
+Quick sort works by first selecting the pivot item. Which in theory is the middle item of the list. Then compairing each item in the list to the pivit item and placing it to the left of the pivot if it is lower and to the right if it is higher. 
+
