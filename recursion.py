@@ -13,15 +13,19 @@ def print_item(my_list, i=0):
 
     """
 
-    # while i < l:
-    #     print my_list[i]
-    #     i += 1
+    while i < len(my_list):
+        print my_list[i]
+        i += 1
 
-    if i == len(my_list):
-        return
+    
+# Im not sure why this isn't working with len! 
+# will need to look at this more
 
-    print my_list[i]
-    print_item(i + 1)
+    # if i > len(my_list):
+    #     return
+
+    # print my_list[i]
+    # print_item(i + 1)
 
 
 # 2. Write a function that uses recursion to print each node in a tree.
