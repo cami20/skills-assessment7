@@ -30,7 +30,7 @@ def merge_lists(list1, list2):
 
         elif list2 == []:
             result.append(list1.pop(0))
-            
+
         elif list1[0] < list2[0]:
             result.append(list1.pop(0))
 
@@ -54,7 +54,21 @@ def merge_sort(lst):
     >>> merge_sort([6, 2, 3, 9, 0, 1])
     [0, 1, 2, 3, 6, 9]
     """
-    pass
+    final = sorted(lst)
+
+    middle = int(len(lst) / 2)
+
+    list1 = lst[:middle]
+    list2 = lst[middle:]
+
+    result = merge_lists(list1, list2)
+
+    if result not final:
+        merge_sort(result)
+    else:
+        return result
+
+
 
 
 
