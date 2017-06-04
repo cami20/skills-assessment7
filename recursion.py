@@ -48,7 +48,10 @@ def print_all_tree_data(tree):
         3
 
     """
-    pass
+
+    print tree.data
+    for child in tree.children:
+        print_all_tree_data(child)
 
 # 3. Write a function that uses recursion to find the length of a list.
 
@@ -97,8 +100,12 @@ def num_nodes(tree):
         >>> num_nodes(one)
         6
     """
+    count = 1
 
-    pass
+    for child in tree.children:
+        count += num_nodes(child)
+
+    return count
 
 #####################################################################
 # END OF ASSIGNMENT: You can ignore everything below.
