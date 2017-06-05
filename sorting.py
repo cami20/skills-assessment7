@@ -63,14 +63,14 @@ def merge_sort(lst):
 
     result = merge_lists(list1, list2)
 
-    if result not final:
+    print result[0]
+    print final[0]
+
+    if result != final:
         merge_sort(result)
+        return result
     else:
         return result
-
-
-
-
 
 
 #####################################################################
